@@ -1,4 +1,21 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
+
+*{
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+.heading-text{
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+/*.App {
   text-align: center;
 }
 
@@ -36,3 +53,4 @@
     transform: rotate(360deg);
   }
 }
+*/
