@@ -34,3 +34,26 @@ Create a row by calling the Columns component and nest 2 equal columns inside it
 first half should display the text left and th other should display the text right
 
 Deadline : 20 mins
+
+s8 - google map mini activity
+go to google maps and select a pin. get the iframe element and place it inside the right Heading component in Contact.js. 
+Add an id to the iframe with the value gmap. when targeted via css, gmap should occupy the 100% width and height of its parent container
+
+deadline : 10 mins
+
+
+s8 - conditional rendering
+in App, create a hook called whichComponentToShow with a setter method called setComponentToShow. 
+give it an initial value of a string with the text about. create a control structure wherein if the value of whichComponentToShow is 
+equal to the string about, it will return a hero component. inside the hero component, nest the Hero.Body and HeroFooter component. 
+nest the about component inside Hero.Body.
+
+else if the value of whichComponentToShow is equal to contact, return a Hero with Hero.body and HeroFooter 
+but with the Contact component nested inside Hero.Body
+
+else if the value of whichComponentToShow is equal to projects, return a Hero with Hero.body and HeroFooter 
+but with the Project component nested inside Hero.Body
+
+else return null
+
+deadline : 30 mins

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container , Columns  } from 'react-bulma-components'
+import './Contact.css'
+
 // import { Field, Control, Label, Input, Textarea, Select, Checkbox, Radio, Help, InputFile } from 'react-bulma-components/lib/components/form';
 const Contact = () => {
 
@@ -46,7 +48,7 @@ const Contact = () => {
 								/>
 							</div>
 
-							
+
 						</div>
 						<button className="button is-primary is-fullwidth" children="Send" />
 					</form>
@@ -54,7 +56,14 @@ const Contact = () => {
 				</Columns.Column>
 
 				<Columns.Column>
-					text right
+					<iframe
+						id="gmap"
+						src="https://maps.google.com/maps?q=market%20market&t=&z=15&ie=UTF8&iwloc=&output=embed"
+						frameborder="0"
+						scrolling="no"
+						marginheight="0"
+						marginwidth="0"
+					/>
 				</Columns.Column>
 			</Columns>
 
