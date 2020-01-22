@@ -3,7 +3,7 @@ import {Container , Tabs , Hero} from 'react-bulma-components'
 const HeroFooter = (props) => {
 
 
-	function changePage(page){
+	function changePageHandler(page){
 		props.setComponentToShow(page)
 	}
 
@@ -17,25 +17,25 @@ const HeroFooter = (props) => {
 
 		      <Tabs.Tab 
 		      		active={ props.shown == "landing" }
-		      		onClick={ ()=>{ changePage('landing') } }
+		      		onClick={ ()=>{ changePageHandler('landing') } }
 		      >
 		        Landing
 		      </Tabs.Tab>
 		      <Tabs.Tab 
 		      		active={ props.shown == "about" } 
-		      		onClick={ ()=>{ changePage('about') } }
+		      		onClick={ ()=>{ changePageHandler('about') } }
 		      >
 		        About
 		      </Tabs.Tab>
 		      <Tabs.Tab 
 		      		active={ props.shown == "projects" }
-		      		onClick={ ()=>{ changePage('projects') } }
+		      		onClick={ ()=>{ changePageHandler('projects') } }
 		      >
 		        Project
 		      </Tabs.Tab>
 		      <Tabs.Tab 
 		      		active={ props.shown == "contact" }
-		      		onClick={ ()=>{ changePage('contact') } }
+		      		onClick={ ()=>{ changePageHandler('contact') } }
 		      >
 		        Contact
 		      </Tabs.Tab>

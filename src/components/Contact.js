@@ -19,6 +19,7 @@ const Contact = () => {
 									id="name"
 									className="input"
 									type="text"
+									placeholder="Name here"
 								/>
 							</div>
 
@@ -31,6 +32,7 @@ const Contact = () => {
 									id="name"
 									className="input"
 									type="email"
+									placeholder="sample@domain.com"
 								/>
 							</div>
 

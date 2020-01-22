@@ -11,7 +11,7 @@ const About = () => {
 					Web Development is our passion
 			</Heading>
 			<Heading size={6} subtitle>
-				We are a multidisciplanary dev team, specializing in mobile product design, web development, branding and illustration
+				We are a multidisciplinary dev team, specializing in mobile product design, web development, branding and illustration
 			</Heading>
 		</Container>
 

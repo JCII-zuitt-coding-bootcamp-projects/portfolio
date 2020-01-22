@@ -1,0 +1,62 @@
+import React, { useState } from 'react';
+
+/*Bulma css*/
+import 'react-bulma-components/dist/react-bulma-components.min.css';
+import './mine/Animate.css';
+/*Bulma components*/
+import { Hero } from 'react-bulma-components';
+
+/*Mount Own Components..*/
+
+import HeroHead from './mine/HeroHead'
+import HeroFooter from './mine/HeroFooter'
+
+import Landing from './mine/Landing'
+import About from './mine/About'
+import Projects from './mine/Projects'
+import Contact from './mine/Contact'
+
+
+
+function App2() {
+
+  const [ pageShown , setPageShown ] = useState("about")
+  let toRender = null;
+
+  switch(pageShown){
+    case 'landing':
+        toRender = <Landing />
+    break;
+
+    case 'about':
+        toRender = <About/>
+    break;
+
+    case 'projects':
+        toRender = <Projects/>
+    break;
+
+    case 'contact':
+        toRender = <Contact />
+    break;
+  }
+
+  return (
+        
+        <Hero color="dark" size="fullheight">
+		  <HeroHead
+			  pageShown={pageShown}
+			  setPageShown={setPageShown}
+		  />
+		  { toRender }
+		  <HeroFooter
+			  pageShown={pageShown}
+			  setPageShown={setPageShown}
+		  />
+		</Hero>
+    );
+
+  
+}
+
+export default App2;
