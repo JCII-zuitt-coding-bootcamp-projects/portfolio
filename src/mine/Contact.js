@@ -34,10 +34,9 @@ const Contact = ()=>{
 	const submitFormClickHandler = () => {
 			console.log('you are trying to submit');
 
-
-			fetch('wss//jc-portfolio-server.herokuapp.com/send', {
-			// fetch('https://jc-portfolio-server.herokuapp.com/send', {
 			
+			fetch('wss://jc-portfolio-server.herokuapp.com/send', {
+			// fetch('https://jc-portfolio-server.herokuapp.com/send', {
 			// fetch('http://localhost:8000/send', {
 				method: 'POST',
 				headers: {
