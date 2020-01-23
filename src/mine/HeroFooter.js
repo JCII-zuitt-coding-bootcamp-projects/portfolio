@@ -17,7 +17,7 @@ const HeroFooter = (props)=>{
 			          	className={props.pageShown == 'about' ? 'is-active' : null}
 			          	onClick={ ()=> props.setPageShown('about') }>
 			            <a>
-			            	<i class="material-icons">account_circle</i> &nbsp;
+			            	<i className="material-icons">account_circle</i> &nbsp;
 			            	About
 			            </a>
 			          </li>
@@ -25,7 +25,7 @@ const HeroFooter = (props)=>{
 			          	className={props.pageShown == 'projects' ? 'is-active' : null}
 			          	onClick={ ()=> props.setPageShown('projects') }>
 			          	<a>
-			            	<i class="material-icons">star</i> &nbsp;
+			            	<i className="material-icons">star</i> &nbsp;
 			            	Projects
 			            </a>
 			          </li>
@@ -33,7 +33,7 @@ const HeroFooter = (props)=>{
 			          	className={props.pageShown == 'contact' ? 'is-active' : null}
 			          	onClick={ ()=> props.setPageShown('contact') }>
 			          	<a>
-			            	<i class="material-icons">message</i> &nbsp;
+			            	<i className="material-icons">message</i> &nbsp;
 			            	Contact
 			            </a>
 			          </li>

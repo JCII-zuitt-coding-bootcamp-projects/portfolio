@@ -12,7 +12,7 @@ const HeroHead = (props)=>{
 			<Hero.Head>
 			    <Navbar>
 			      <Container>
-			        <Navbar.Brand className="has-background-info">
+			        <Navbar.Brand className="has-background-dark">
 			          <a className="navbar-item">
 			          	<h1 className="has-text-weight-bold">{ '<LDev />' }</h1>
 			          </a>
@@ -33,7 +33,11 @@ const HeroHead = (props)=>{
 			          <div className="navbar-end">
 			            <Navbar.Item
 			               className={props.pageShown == 'landing' ? 'is-active' : null}
-			          	   onClick={ ()=> props.setPageShown('landing') }
+			          	   onClick={ ()=> {
+			          	   		props.setPageShown('landing')
+			          	   		setMenuShown(!menuShown);
+
+			          	   }}
 			            >
 			              Home
 			            </Navbar.Item>

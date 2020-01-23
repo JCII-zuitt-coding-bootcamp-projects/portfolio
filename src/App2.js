@@ -3,6 +3,9 @@ import React, { useState } from 'react';
 /*Bulma css*/
 import 'react-bulma-components/dist/react-bulma-components.min.css';
 import './mine/Animate.css';
+import './App2.css';
+
+
 /*Bulma components*/
 import { Hero } from 'react-bulma-components';
 
@@ -20,7 +23,7 @@ import Contact from './mine/Contact'
 
 function App2() {
 
-  const [ pageShown , setPageShown ] = useState("about")
+  const [ pageShown , setPageShown ] = useState("contact")
   let toRender = null;
 
   switch(pageShown){
