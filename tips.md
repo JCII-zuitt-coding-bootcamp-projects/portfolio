@@ -35,7 +35,7 @@ https://www.youtube.com/watch?v=nrWGr2OvBD4
 
 
 7. Customize course Projects
-	-customized copied projects from tutorials
+	-customized copied projects from tutorials, if from tutorial
 
 8. Easy contact on contact page
 	-email

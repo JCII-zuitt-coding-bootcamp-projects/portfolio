@@ -71,7 +71,7 @@ const Contact = ()=>{
 		<Hero.Body>
 		    <Container>
 			<Columns>
-				<Columns.Column>
+				<Columns.Column className="animated fadeInLeftBig">
 					
 					<form>
 						<div className="field">
@@ -125,7 +125,7 @@ const Contact = ()=>{
 
 				</Columns.Column>
 
-				<Columns.Column >
+				<Columns.Column className="animated fadeIn slower">
 					<iframe
 						id="gmap"
 						src="https://maps.google.com/maps?q=market%20market&t=&z=15&ie=UTF8&iwloc=&output=embed"

@@ -18,12 +18,13 @@ import Landing from './mine/Landing'
 import About from './mine/About'
 import Projects from './mine/Projects'
 import Contact from './mine/Contact'
+import Showcase from './mine/Showcase'
 
 
 
 function App2() {
 
-  const [ pageShown , setPageShown ] = useState("contact")
+  const [ pageShown , setPageShown ] = useState("showcase")
   let toRender = null;
 
   switch(pageShown){
@@ -41,6 +42,10 @@ function App2() {
 
     case 'contact':
         toRender = <Contact />
+    break;
+
+    case 'showcase':
+        toRender = <Showcase />
     break;
   }
 

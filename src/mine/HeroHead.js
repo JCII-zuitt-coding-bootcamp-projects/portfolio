@@ -41,8 +41,15 @@ const HeroHead = (props)=>{
 			            >
 			              Home
 			            </Navbar.Item>
-			            <Navbar.Item>
-			              Examples
+			            <Navbar.Item
+			               className={props.pageShown == 'showcase' ? 'is-active' : null}
+			          	   onClick={ ()=> {
+			          	   		props.setPageShown('showcase')
+			          	   		setMenuShown(!menuShown);
+
+			          	   }}
+			            >
+			              Showcase
 			            </Navbar.Item>
 			            <Navbar.Item>
 			              Documentation
