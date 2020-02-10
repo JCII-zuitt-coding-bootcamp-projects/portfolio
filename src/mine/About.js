@@ -8,25 +8,25 @@ const About = ()=>{
 	return (
 
 		<Hero.Body>
-		    <Container>
+		    <Container className=" animated fadeInDown">
 		    	<Columns>
-		    		<Columns.Column className=" animated fadeInDown">
-					    <Heading>
+		    		<Columns.Column className="">
+					    <Heading className="has-text-centered">
 					        Web Developer Portfolio 
 					    	{ /*<i class="material-icons">business_center</i>*/ }
 					    </Heading>
-					    <Heading subtitle  className="animated fadeIn">
+					    <Heading subtitle  className="animated fadeIn" style={{ marginTop : '3rem'}}>
 					         Hi! I'm Jose Clet II
 					         <br />
 					         I'm a full stack web developer. Feel free to browse my portfolio to know more about my projects and skills.
 					         <br />
-					         Have fun! 
+					         Have a nice day! 
 					    </Heading>
 
 				    </Columns.Column>
 
-				    <Columns.Column className=" animated fadeInRightBig">
-				        <Heading className="has-text-left">
+				    <Columns.Column>
+				        <Heading className="has-text-centered">
 					        Skill Sets
 					    </Heading>
 

@@ -69,58 +69,74 @@ const Contact = ()=>{
 	return (
 
 		<Hero.Body>
-		    <Container className=" animated fadeInDown">
-				
-				<div className="columns">
-
-				  <div className="column is-6 is-offset-3">
-
-				    <div style={{  margin :'0 auto'}} >
-						<Heading className="has-text-centered">
-					        Contact Information
-					    </Heading>
-						<div className="box skill-icons has-text-centered" >
-							<center>
-
-								<figure className="image is-64x64 is-centered">
-								  <img className="" src="/assets/user.png" />
-								</figure>
-								<h4 className="subtitle is-4">Jose Clet II</h4>
-
-								<figure className="image is-64x64 is-centered">
-								  <img className="" src="/assets/phone.png" />
-								</figure>
-								<h4 className="subtitle is-4">0912345678</h4>
-
-								<figure className="image is-64x64 is-centered">
-								  <img className="" src="/assets/email.png" />
-								</figure>
-								<h4 className="subtitle is-4">clet.jose@gmail.com</h4>
-
-								<div >
-								  <a href="https://www.facebook.com/" target="_blank">
-								  	<img className="" src="/assets/facebook.png" style={{ width: '64px'}}/>
-								  </a>
-								  &nbsp;
-								  &nbsp;
-								  &nbsp;
-								  <a href="https://www.linkedin.com/in/jcii/" target="_blank">
-								  	<img className="" src="/assets/linkedin.png" style={{ width: '64px'}}/>
-								  </a>
-								  
-								</div>
-								<h4 className="subtitle is-4">Others</h4>
-
-							</center>
+		    <Container>
+			<Columns>
+				<Columns.Column className="animated fadeInLeftBig">
+					
+					<form>
+						<div className="field">
+							<label htmlFor="name" className="label has-text-light">Name</label>
+							<div className="control">
+								<input
+									id="name"
+									className="input"
+									type="text"
+									placeholder="Name here"
+									onChange={nameInputHandler} value={name}
+								/>
+							</div>
 
 						</div>
-					</div>
 
-				  </div>
-				
-				
+						<div className="field">
+							<label htmlFor="name" className="label has-text-light">Email</label>
+							<div className="control">
+								<input
+									id="name"
+									className="input"
+									type="email"
+									placeholder="sample@domain.com"
+									onChange={emailInputHandler} value={email}
+								/>
+							</div>
 
-				</div>
+						</div>
+
+						<div className="field">
+							<label htmlFor="name" className="label has-text-light">Message</label>
+							<div className="control">
+
+								<textarea
+									id="message"
+									className="textarea"
+									rows="6	"
+									placeholder="Message here"
+									onChange={messageInputHandler}
+									value={message}
+								/>
+							</div>
+
+
+						</div>
+						<button type="button" className="button is-primary is-fullwidth" children="Send"
+							onClick={submitFormClickHandler}
+						/>
+					</form>
+
+				</Columns.Column>
+
+				<Columns.Column className="animated fadeIn slower">
+					<iframe
+						id="gmap"
+						src="https://maps.google.com/maps?q=market%20market&t=&z=15&ie=UTF8&iwloc=&output=embed"
+						frameBorder="0"
+						scrolling="no"
+						marginHeight="0"
+						marginWidth="0"
+					/>
+				</Columns.Column>
+			</Columns>
+
 			</Container>
 		</Hero.Body>
 

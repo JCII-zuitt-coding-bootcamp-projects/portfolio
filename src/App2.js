@@ -24,7 +24,7 @@ import Showcase from './mine/Showcase'
 
 function App2() {
 
-  const [ pageShown , setPageShown ] = useState("showcase")
+  const [ pageShown , setPageShown ] = useState("about")
   let toRender = null;
 
   switch(pageShown){
@@ -52,16 +52,19 @@ function App2() {
   return (
         
         <Hero color="dark" size="fullheight">
-		  <HeroHead
-			  pageShown={pageShown}
-			  setPageShown={setPageShown}
-		  />
-		  { toRender }
-		  <HeroFooter
-			  pageShown={pageShown}
-			  setPageShown={setPageShown}
-		  />
-		</Hero>
+    		  <HeroHead
+    			  pageShown={pageShown}
+    			  setPageShown={setPageShown}
+    		  />
+    		  { toRender }
+    		  
+          {
+            // <HeroFooter
+            //   pageShown={pageShown}
+            //   setPageShown={setPageShown}
+            // />
+          }
+    		</Hero>
     );
 
   

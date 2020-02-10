@@ -10,21 +10,21 @@ const HeroHead = (props)=>{
 	return (
 
 			<Hero.Head>
-			    <Navbar>
+			    <Navbar className="is-fixed-top">
 			      <Container>
-			        <Navbar.Brand className="has-background-dark">
+			        <Navbar.Brand className="has-background-dark ">
 			          <a className="navbar-item">
-			          	<h1 className="has-text-weight-bold">{ '<LDev />' }</h1>
+			          	<h1 className="has-text-weight-bold">{ '< JC-Dev / >' }</h1>
 			          </a>
+
+
 			          <Navbar.Burger data-target="navbarMenuHeroB"
 			          	className={menuShown ? 'is-active has-background-info': null}
 			          	onClick={()=>{
 			          		setMenuShown(!menuShown);
 			          	}}
 			          	>
-			            <span></span>
-			            <span></span>
-			            <span></span>
+			            <i className="material-icons has-text-white">menu</i>
 			          </Navbar.Burger>
 			        </Navbar.Brand>
 			        <Navbar.Menu id="navbarMenuHeroB" 
@@ -32,28 +32,40 @@ const HeroHead = (props)=>{
 			        >
 			          <div className="navbar-end">
 			            <Navbar.Item
-			               className={props.pageShown == 'landing' ? 'is-active' : null}
+			               className={props.pageShown == 'about' ? 'is-active' : null}
 			          	   onClick={ ()=> {
-			          	   		props.setPageShown('landing')
+			          	   		props.setPageShown('about')
 			          	   		setMenuShown(!menuShown);
 
 			          	   }}
 			            >
-			              Home
+			              <i className="material-icons">account_circle</i>
+			              &nbsp;&nbsp;About
 			            </Navbar.Item>
 			            <Navbar.Item
-			               className={props.pageShown == 'showcase' ? 'is-active' : null}
+			               className={props.pageShown == 'projects' ? 'is-active' : null}
 			          	   onClick={ ()=> {
-			          	   		props.setPageShown('showcase')
+			          	   		props.setPageShown('projects')
 			          	   		setMenuShown(!menuShown);
 
 			          	   }}
 			            >
-			              Showcase
+			              <i className="material-icons">star</i>
+			              &nbsp;&nbsp;Projects
 			            </Navbar.Item>
-			            <Navbar.Item>
-			              Documentation
+			            
+			            <Navbar.Item
+			               className={props.pageShown == 'contact' ? 'is-active' : null}
+			          	   onClick={ ()=> {
+			          	   		props.setPageShown('contact')
+			          	   		setMenuShown(!menuShown);
+
+			          	   }}
+			            >
+			              <i className="material-icons">message</i>
+			              &nbsp;&nbsp;Contact
 			            </Navbar.Item>
+
 			          </div>
 			        </Navbar.Menu>
 			      </Container>

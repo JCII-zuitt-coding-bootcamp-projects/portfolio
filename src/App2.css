@@ -11,7 +11,7 @@ div .skill-icons {
 }
 
 div .skill-icons:hover {
-    background-color: rgba(255, 255, 255, 0.85);
+    /*background-color: rgba(255, 255, 255, 0.85);*/
 
 }
 
@@ -27,4 +27,11 @@ div.skill-icons svg:hover{
 	transition: transform 0.8s !important;
   	transform-style: preserve-3d !important;
 	transform: rotateY(360deg);
+}
+
+
+@media screen and (max-width: 768px) {
+  body{
+     padding-top: 1.3rem;
+  }
 }

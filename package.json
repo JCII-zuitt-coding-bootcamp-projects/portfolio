@@ -15,8 +15,8 @@
     "sweetalert2": "^9.7.0"
   },
   "scripts": {
-    "start_build": "react-scripts start",
-    "start": "serve -s build",
+    "start": "react-scripts start",
+    "start_build": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
