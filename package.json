@@ -15,8 +15,8 @@
     "sweetalert2": "^9.7.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "start_build": "serve -s build", //for heroku para di mag error pag pinush about sa websocket issue
+    "start_build": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
