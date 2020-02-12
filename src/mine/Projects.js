@@ -21,7 +21,7 @@ const Projects = ()=>{
 		   		
 		   		<div className="box skill-icons">
 		   		<h5 class="subtitle is-4 has-text-centered">ReciPinoy</h5>
-			   		<a href="https://tuitt.gitlab.io/students/batch47/clet-joseii/capstone-1/index.html" target="_blank">
+			   		<a href="https://recipinoy-project.herokuapp.com/" target="_blank">
 					   		<img
 					   			class="is-rounded"
 					   			src="/images/capstone/c1.JPG"
