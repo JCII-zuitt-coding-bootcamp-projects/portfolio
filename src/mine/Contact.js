@@ -90,7 +90,7 @@ const Contact = ()=>{
 								<figure className="image is-64x64 is-centered">
 								  <img className="" src="/assets/phone.png" />
 								</figure>
-								<h4 className="subtitle is-4">0912345678</h4>
+								<h4 className="subtitle is-4">09155074263</h4>
 
 								<figure className="image is-64x64 is-centered">
 								  <img className="" src="/assets/email.png" />
