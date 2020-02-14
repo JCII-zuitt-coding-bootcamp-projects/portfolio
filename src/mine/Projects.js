@@ -50,7 +50,7 @@ const Projects = ()=>{
 		   		<div className="box skill-icons">
 		   		<h5 class="subtitle is-4 has-text-centered">EasyBiz</h5>
 
-			   		<a href="http://protected-reef-08774.herokuapp.com/admin/login" target="_blank">
+			   		<a href="http://easybiz-app.herokuapp.com/admin/login" target="_blank">
 					   		<img
 					   			class="is-rounded"
 					   			src="/images/capstone/c2.JPG"
