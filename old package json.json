@@ -2,10 +2,6 @@
   "name": "b47_portfolio",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "npm": "6.12.1",
-    "node": "12.13.1"
-  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
@@ -19,7 +15,8 @@
     "sweetalert2": "^9.7.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start_build": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
