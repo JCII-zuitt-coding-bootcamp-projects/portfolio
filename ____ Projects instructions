@@ -1,0 +1,122 @@
+
+
+=========================|		ReciPinoy		|==============================
+
+
+
+Project title : Recipinoy
+
+About : Recipinoy is my 1st project I developed in Zuitt Coding Bootcamp. The goal of the 1st project is to showcase our skills in creating static websites using HTML, CSS(Bootstrap) and Javascript. Recipinoy is a website of Pinoy recipes. The website is mobile responsive.
+
+!!!!!!!Limitations : All Recipe links are redirected to only one recipe (LUMPIANG GULAY) !!!!! dont add this, since may mga link na bawat isa pero same ingredients ang procedures
+
+Days of development :  7 days
+
+Skills used: HTML , CSS(Bootstrap framework) and Javascript
+
+
+Note: The App is hosted on Heroku (free web hosting site). If the website did not load properly or show some error, try to reload the website many times. Contact me if you encountered any problem.
+
+
+
+
+
+
+
+
+
+
+=========================|		EasyBiz		|==============================
+
+Project title : EasyBiz
+
+About : EasyBiz is my 2nd project I developed in Zuitt Coding Bootcamp. The goal of the 2nd project is to develop an eCommerce web app using Laravel framework. The EasyBiz Web app is a generic booking website for any businesses/store needs. It consists of the business side [admin authentication] and customer side [user authentication]. Business admin can create reusable bookable templates for the business/store. The business has the ability to explicitly add how many bookable seats/rooms in the bookable template depending on their business needs.
+
+
+How to use:
+
+Business side(Black theme web app)
+1. The business can register(link) in the business side of the web app.
+2. After registering and/or logging into the business account(link here), you can now design a bookable template(prerequisite before creating bookable schedule), create bookable schedule and add/edit staffs.
+3. After creating bookable schedule. Customers can now reserve or book in the Customer side.
+4. Business admin can also verify reservation ticket.
+5. You can also find instruction how to use the business side on its home page.
+
+Customer side (Blue theme web app)
+1. Register(link) customer account in the registration page and/or login your account.
+2. Go to "Find Services (Reservation schedules)" and select the schedule you want to book.
+3. Select the available seats/rooms you want to reserve and click "Reserve" and confirm.
+4. You can access the reservation ticket in Reservations page with their QR code and reference number(The business will need this to verify your ticket in the venue/store).	
+5. You can also edit your profile and update password in the "Account" -> "Profile" section
+
+
+
+Days of development : 14 days
+
+
+
+Skills used: Laravel framework, Vue.js , PHP , MySQL database, HTML , CSS(Bootstrap framework) 
+
+Note: The App is hosted on Heroku (free web hosting site). If the website did not load properly or show some error, try to reload the website many times. Contact me if you encountered any problem.
+
+
+
+
+
+
+
+
+
+
+=========================|		EyeSecure		|==============================
+
+
+
+
+
+
+Project title : EyeSecure
+
+About : EyeSecure is my 3rd project I developed in Zuitt Coding Bootcamp. It was developed using MERN stack(MongoDB, Express. js, React, and Node. js) , Apollo graphql and many cool Javascript libraries. The project was inspired by what China's facial recognition technology (AI) they have today. Basically Eyesecure is a facial recognition technology for CCTV cameras that can be used probably in CCTV control room. Admins will feed(machine learning) the system the faces of the person they want to monitor and once recorded face is detected, it will saved automatically in the recent detections. They can also add person in the watchlist and once their face where detected, the system will alarm.
+
+
+How to use :
+1. Go to the Login(Link) Page and use the credentials below:
+	Username : admin1
+	Password : 123456
+
+2. Go to "Admin" section to Add, Edit or delete Admins.
+
+3. To add a new person, click "People" => "Add Person" , Fill up the form by adding common person details and attached VALID Profile photo for that person. Don't upload images without a person's face, for it will show error. You may upload celebrity faces for fast resources(If you don't want to use your own face).
+
+4. After adding person profile, Click the "EyeSecure Icon" in the middle of the Navigation bar to start Face recognition.
+
+5. The Live monitoring section may take some time to load for it will load the A.I. model that will be used and all the faces in the database. Once everything is loaded, Click the "Start Live Detection". 
+
+6. If you don't want to test your own face in live detection, You can test live detection by using your phone (search for the celebrity photo with their faces) and put it in front of the Web Cam.
+
+7. Unknown faces will be tagged as Unknown(Yellow box), if the registered face is detected(green box) it will be shown in the right side section and it will be saved in the "Recent detection section." 
+
+8. If the detected face is in the Watchlist, the system will alarm.
+
+9. To view all recent detection, go to "Monitor" -> "Recent detections". You can zoom in the Face detected by clicking.
+
+
+Note:
+1. The 
+1. EyeSecure is developed on a computer with:
+	-8 Gig ram
+	-512GB PCIe M.2 SSD storage, 
+	-Windows 10 operating system
+	-Intel Core i5-9300H 2.40GHz.
+	-0.9 MP Web Cam
+  If you will use EyeSecure in a lower Computer specifications , it may affect system performance. The higher the specifications , the faster the program.
+
+2. The App is hosted on Heroku (free web hosting site, which is ideal for simple web app). If the website did not load properly or show some error, try to reload the website many times. Because of these, the system may load slower for rendering and fetching of necessary data. Contact me if you encountered any problem.
+
+3. The system needs a decent webcam(to mimic CCTV camera) to test live facial recognition.
+4. The system is not mobile responsive since it is not intended for mobile users.
+
+Days of development : 8 days.
+
+Major skills used: MERN stack(MongoDB, Express. js, React, and Node. js) , Apollo graphql and other Javascript libraries
