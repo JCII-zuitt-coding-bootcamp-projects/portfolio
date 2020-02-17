@@ -24,7 +24,7 @@ import Showcase from './mine/Showcase'
 
 function App2() {
 
-  const [ pageShown , setPageShown ] = useState("projects")
+  const [ pageShown , setPageShown ] = useState("about")
   let toRender = null;
 
   switch(pageShown){
