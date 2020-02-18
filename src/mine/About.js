@@ -15,10 +15,21 @@ const About = ()=>{
 					        Web Developer Portfolio 
 					    	{ /*<i class="material-icons">business_center</i>*/ }
 					    </Heading>
-					    <Heading subtitle  className="animated fadeIn" style={{ marginTop : '3rem'}}>
-					         Hi! I'm Jose Clet II
+					    <Heading subtitle  className="animated fadeIn has-text-justified" style={{ marginTop : '3rem'}}>
+					         Hi! I'm Jose Clet II,
+					         <br/>
+					         And I'm a full stack web developer.
 					         <br />
-					         I'm a full stack web developer. Feel free to browse my portfolio to know more about my projects and skills.
+					         <br/>
+					         <p>
+					         I'm a fast learner and can easily adapt to changes when it comes to the latest web technologies. I have learned  a lot of web technologies and best practices that you can take advantage of.
+					         I took <a href="https://zuitt.co/" className="has-text-info" target="_blank">Zuitt Coding Bootcamp</a> course to learn the latest web technologies. I finished their 3 months intensive training course and because of hard work and persistence, I got the 2nd top Performer Achievement Award.
+					         </p>
+
+					         <br/>
+					         <p>
+					         Feel free to browse my portfolio to know more about my projects and skills.
+					         </p>
 					         <br />
 					         Have a nice day! 
 					    </Heading>
