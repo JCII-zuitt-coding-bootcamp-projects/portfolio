@@ -33,7 +33,7 @@ const Capstone2 = (props)=>{
 			   			</a>
 			   		</h5>
 			   			<center>
-			   			<label className="has-text-centered has-text-success ">(Intruction how to use below)</label>
+			   			<label className="has-text-centered has-text-success ">(Instructions how to use below)</label>
 			   			</center>
 
 			   		<br/>
@@ -61,7 +61,7 @@ const Capstone2 = (props)=>{
 			   			<br/>
 			   			<br/>
 			   			 <strong>
-			   			 	> Business/Admin side (Black theme)
+			   			 	<i class="material-icons float-left">business_center</i> Business/Admin side (Black theme)
 			   			 </strong>
 			   				<ol className="has-text-justified" style={{ margin: '0 1rem'}}>
 
@@ -90,7 +90,7 @@ const Capstone2 = (props)=>{
 			   			<br/>
 
 			   			 <strong>
-			   			 	> Customer side (Blue theme web app)
+			   			 	<i class="material-icons float-left">person</i> Customer side (Blue theme)
 			   			 </strong>
 			   				<ol className="has-text-justified" style={{ margin: '0 1rem'}}>
 

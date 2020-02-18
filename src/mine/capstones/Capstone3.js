@@ -30,7 +30,7 @@ const Capstone3 = (props)=>{
 			   			</a>
 			   		</h5>
 			   			<center>
-			   			<label className="has-text-centered has-text-success ">(Intruction how to use below)</label>
+			   			<label className="has-text-centered has-text-success ">(Instructions how to use below)</label>
 			   			</center>
 
 			   		<br/>
