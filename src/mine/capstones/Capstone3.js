@@ -76,7 +76,7 @@ const Capstone3 = (props)=>{
 				   				</li>
 									
 								<li>
-									To add a new person, click "People" => "Add Person" , Fill up the form by adding common person details and attached VALID Profile photo for that person. <span className="has-text-danger">Don't upload images without a person's face</span>, for it will show error. You may upload celebrity faces for fast resources(If you don't want to use your own face).
+									To add a new person, click "People" => "Add Person" , Fill up the form by adding common person details and attached VALID Profile photo for that person. <span className="has-text-danger">Don't upload images without a person's face.</span> You may upload celebrity faces for fast resources(If you don't want to use your own face).
 				   				</li>
 
 				   				<li>
