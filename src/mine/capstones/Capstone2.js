@@ -123,7 +123,7 @@ const Capstone2 = (props)=>{
 			   		<br/>
 
 					<h6 className="title is-6 has-text-grey">
-			   			<span className="has-text-dark">Skills used:</span> Laravel framework, Vue.js , PHP , MySQL database, HTML , CSS(Bootstrap framework)
+			   			<span className="has-text-dark">Skills used:</span> Laravel framework, Vue.js, CSS Grid, PHP , MySQL database, HTML , CSS(Bootstrap framework)
 			   		</h6>
 
 			   		<p>
