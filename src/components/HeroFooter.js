@@ -1,11 +1,13 @@
-import React, {useState} from 'react'
+import React from 'react'
+
+import { NavLink } from 'react-router-dom'
 
 /*Bulma components*/
-import { Hero , Container , Navbar } from 'react-bulma-components';
+import { Hero  } from 'react-bulma-components';
 
 const HeroFooter = (props)=>{
 
-	let [menuShown ,setMenuShown] = useState(false);
+	// let [menuShown ,setMenuShown] = useState(false);
 
 	return (
 
@@ -14,28 +16,31 @@ const HeroFooter = (props)=>{
 			      <div className="container">
 			        <ul className="has-background-dark" style={{ opacity: 0.9 }}>
 			          <li 
-			          	className={props.pageShown == 'about' ? 'is-active' : null}
-			          	onClick={ ()=> props.setPageShown('about') }>
-			            <a>
+			          	// className={props.pageShown == 'about' ? 'is-active' : null}
+			          	// onClick={ ()=> props.setPageShown('about') }
+						  >
+			            <NavLink to='/about'>
 			            	<i className="material-icons">account_circle</i> &nbsp;
 			            	About
-			            </a>
+			            </NavLink>
 			          </li>
 			          <li 
-			          	className={props.pageShown == 'projects' ? 'is-active' : null}
-			          	onClick={ ()=> props.setPageShown('projects') }>
-			          	<a>
+			          	// className={props.pageShown == 'projects' ? 'is-active' : null}
+			          	// onClick={ ()=> props.setPageShown('projects') }
+						  >
+			          	<NavLink to='/projects'>
 			            	<i className="material-icons">star</i> &nbsp;
 			            	Projects
-			            </a>
+			            </NavLink>
 			          </li>
 			          <li 
-			          	className={props.pageShown == 'contact' ? 'is-active' : null}
-			          	onClick={ ()=> props.setPageShown('contact') }>
-			          	<a>
+			          	// className={props.pageShown == 'contact' ? 'is-active' : null}
+			          	// onClick={ ()=> props.setPageShown('contact') }
+						  >
+			          	<NavLink to='/constac'>
 			            	<i className="material-icons">message</i> &nbsp;
 			            	Contact
-			            </a>
+			            </NavLink>
 			          </li>
 			        </ul>
 			      </div>
