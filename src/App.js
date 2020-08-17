@@ -1,55 +1,76 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 /*Bulma css*/
 import 'react-bulma-components/dist/react-bulma-components.min.css';
+import './components/Animate.css';
+import "./App.css";
+
 
 /*Bulma components*/
 import { Hero } from 'react-bulma-components';
 
-/*Mount Components..*/
-import About from './components/About'
-import Contact from './components/Contact'
-import HeroFooter from './components/HeroFooter'
-import Project from './components/Project'
+/*Mount Own Components..*/
+
+import HeroHead from './components/HeroHead'
+// import HeroFooter from './components/HeroFooter'
+
 import Landing from './components/Landing'
+import About from './components/About'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+import Showcase from './components/Showcase'
+
+
+
 
 function App() {
 
-  const [ whichComponentToShow , setComponentToShow ] = useState("landing")
+  const [ pageShown , setPageShown ] = useState("about")
   let toRender = null;
 
-  switch(whichComponentToShow){
-    case 'about':
-        toRender = <About />
-    break;
-
-    case 'contact':
-        toRender = <Contact/>
-    break;
-
-    case 'projects':
-        toRender = <Project/>
-    break;
-
+  switch(pageShown){
     case 'landing':
         toRender = <Landing />
     break;
+
+    case 'about':
+        toRender = <About/>
+    break;
+
+    case 'projects':
+        toRender = <Projects/>
+    break;
+
+    case 'contact':
+        toRender = <Contact />
+    break;
+
+    case 'showcase':
+        toRender = <Showcase />
+    break;
+
+    default:
+
+    break;
   }
 
-
   return (
-        <Hero color="info" size="fullheight">
-            <Hero.Body>
-              { toRender }
-            </Hero.Body>
-            <HeroFooter shown={whichComponentToShow}
-                        setComponentToShow={setComponentToShow}
-            />
-
-        </Hero>
-      );
+        
+        <Hero color="dark" size="fullheight">
+    		  <HeroHead
+    			  pageShown={pageShown}
+    			  setPageShown={setPageShown}
+    		  />
+    		  { toRender }
+    		  
+          {
+            // <HeroFooter
+            //   pageShown={pageShown}
+            //   setPageShown={setPageShown}
+            // />
+          }
+    		</Hero>
+    );
 
   
 }

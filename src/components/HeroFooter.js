@@ -1,49 +1,48 @@
-import React from 'react';
-import {Container , Tabs , Hero} from 'react-bulma-components'
-const HeroFooter = (props) => {
+import React, {useState} from 'react'
 
+/*Bulma components*/
+import { Hero , Container , Navbar } from 'react-bulma-components';
 
-	function changePageHandler(page){
-		props.setComponentToShow(page)
-	}
+const HeroFooter = (props)=>{
+
+	let [menuShown ,setMenuShown] = useState(false);
 
 	return (
-		<Hero.Footer color="Link">
-			<Tabs
-		      type="toggle-rounded"
-		      align="centered"
-		      fullwidth
-		    >
 
-		      <Tabs.Tab 
-		      		active={ props.shown == "landing" }
-		      		onClick={ ()=>{ changePageHandler('landing') } }
-		      >
-		        Landing
-		      </Tabs.Tab>
-		      <Tabs.Tab 
-		      		active={ props.shown == "about" } 
-		      		onClick={ ()=>{ changePageHandler('about') } }
-		      >
-		        About
-		      </Tabs.Tab>
-		      <Tabs.Tab 
-		      		active={ props.shown == "projects" }
-		      		onClick={ ()=>{ changePageHandler('projects') } }
-		      >
-		        Project
-		      </Tabs.Tab>
-		      <Tabs.Tab 
-		      		active={ props.shown == "contact" }
-		      		onClick={ ()=>{ changePageHandler('contact') } }
-		      >
-		        Contact
-		      </Tabs.Tab>
-		    </Tabs>
-		</Hero.Footer>
+			<Hero.Footer>
+			    <nav className="tabs is-boxed is-fullwidth">
+			      <div className="container">
+			        <ul className="has-background-dark" style={{ opacity: 0.9 }}>
+			          <li 
+			          	className={props.pageShown == 'about' ? 'is-active' : null}
+			          	onClick={ ()=> props.setPageShown('about') }>
+			            <a>
+			            	<i className="material-icons">account_circle</i> &nbsp;
+			            	About
+			            </a>
+			          </li>
+			          <li 
+			          	className={props.pageShown == 'projects' ? 'is-active' : null}
+			          	onClick={ ()=> props.setPageShown('projects') }>
+			          	<a>
+			            	<i className="material-icons">star</i> &nbsp;
+			            	Projects
+			            </a>
+			          </li>
+			          <li 
+			          	className={props.pageShown == 'contact' ? 'is-active' : null}
+			          	onClick={ ()=> props.setPageShown('contact') }>
+			          	<a>
+			            	<i className="material-icons">message</i> &nbsp;
+			            	Contact
+			            </a>
+			          </li>
+			        </ul>
+			      </div>
+			    </nav>
+			  </Hero.Footer>
 
 		);
-
 }
 
 
