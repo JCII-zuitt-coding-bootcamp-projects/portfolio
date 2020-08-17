@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 // import { Heading } from 'react-bulma-components';
 
 const Capstone2 = (props)=>{
@@ -18,7 +18,8 @@ const Capstone2 = (props)=>{
 			      	
 			      	<a href="/images/capstone/c2.JPG" target="_blank" style={{ cursor : 'zoom-in'}} >
 				    	<img
-				   			className="is-rounded"
+							className="is-rounded"
+							alt="Capstone 2"
 				   			src="/images/capstone/c2.JPG"
 				   			style={{ width : '100%'}}
 				   		/>
@@ -48,9 +49,9 @@ const Capstone2 = (props)=>{
 
 			   		<p>
 			   			<span className="has-text-dark title is-6">About: </span>
-			   			EasyBiz is my 2nd project I developed in <a href="https://zuitt.co/" target="_blank">Zuitt Coding Bootcamp</a>.
-			   			The goal of the 2nd project is to develop an eCommerce web app using Laravel framework. The EasyBiz Web app is a generic booking website for any businesses/store needs.
-			   			It consists of the <a href="https://easy-biz.herokuapp.com/admin/login" target="_blank">business side</a> [admin authentication] and <a href="https://easy-biz.herokuapp.com/login" target="_blank">customer side</a> [user authentication]. Business admin can create reusable bookable templates for the business/store. The business has the ability to explicitly add how many bookable seats/rooms in the bookable template depending on their business needs.
+			   			EasyBiz is the 2nd project I developed in <a href="https://zuitt.co/" target="_blank">Zuitt Coding Bootcamp</a>.
+			   			The goal of the 2nd project is to develop an eCommerce web app using the Laravel framework. The EasyBiz Web app is a generic booking website for any business/store needs.
+			   			It consists of the <a href="https://easy-biz.herokuapp.com/admin/login" target="_blank">business side</a> [admin authentication] and <a href="https://easy-biz.herokuapp.com/login" target="_blank">the customer side</a> [user authentication]. Business admin can create reusable bookable templates for the business/store. The business has the ability to explicitly add how many bookable seats/rooms in the bookable template depending on their business needs.
 					</p>
 
 
@@ -66,23 +67,23 @@ const Capstone2 = (props)=>{
 			   				<ol className="has-text-justified" style={{ margin: '0 1rem'}}>
 
 				   				<li>
-				   					The business can <a href="https://easy-biz.herokuapp.com/admin/register" target="_blank">register</a> in the business side of the web app.
+				   					The business can <a href="https://easy-biz.herokuapp.com/admin/register" target="_blank">register</a> on the business side of the web app.
 				   				</li>
 
 				   				<li>
-				   					After registering and/or logging into the business account, you can now design a bookable template(prerequisite before creating bookable schedule), create bookable schedule and add/edit staffs.
+				   					After registering and/or logging into the business account, you can now design a bookable template(prerequisite before creating a bookable schedule), create a bookable schedule, and add/edit staff.
 				   				</li>
 
 				   				<li>
-				   					After creating bookable schedule. Customers can now reserve or book in the Customer side.
+				   					After creating a bookable schedule. Customers can now reserve or book on the Customer side.
 				   				</li>
 
 				   				<li>
-				   					Business admin can also verify reservation ticket.
+				   					Business admin can also verify reservation tickets.
 				   				</li>
 
 				   				<li>
-				   					You can also find instruction how to use the business side on its <a href="https://easy-biz.herokuapp.com/admin/home" target="_blank">home page</a>
+				   					You can also find instruction on how to use the business side on its <a href="https://easy-biz.herokuapp.com/admin/home" target="_blank">home page</a>
 				   				</li>
 
 
@@ -95,7 +96,7 @@ const Capstone2 = (props)=>{
 			   				<ol className="has-text-justified" style={{ margin: '0 1rem'}}>
 
 				   				<li>
-									Register customer account in the <a href="http://easy-biz.herokuapp.com/register" target="_blank">registration page</a> and/or <a href="https://easy-biz.herokuapp.com/login" target="_blank">login</a> your account.
+									Register the customer account on the <a href="http://easy-biz.herokuapp.com/register" target="_blank">registration page</a> and/or <a href="https://easy-biz.herokuapp.com/login" target="_blank">login</a> to your account.
 				   				</li>
 
 				   				<li>
@@ -107,11 +108,11 @@ const Capstone2 = (props)=>{
 				   				</li>
 
 				   				<li>
-				   					You can access the reservation ticket in Reservations page with their QR code and reference number(The business will need this to verify your ticket in the venue/store).	
+				   					You can access the reservation ticket in the Reservations page with their QR code and reference number(The business will need this to verify your ticket in the venue/store).	
 				   				</li>
 
 				   				<li>
-									You can also edit your profile and update password in the "Account" -> "Profile" section
+									You can also edit your profile and update the password in the "Account" -> "Profile" section
 				   				</li>
 
 

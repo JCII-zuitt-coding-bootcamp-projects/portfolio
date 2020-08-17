@@ -90,7 +90,7 @@ const Contact = ()=>{
 								<figure className="image is-64x64 is-centered">
 								  <img className="" src="/assets/phone.png" />
 								</figure>
-								<h4 className="subtitle is-4">09155074263</h4>
+								<h4 className="subtitle is-4">09155201879</h4>
 
 								<figure className="image is-64x64 is-centered">
 								  <img className="" src="/assets/email.png" />
@@ -98,9 +98,9 @@ const Contact = ()=>{
 								<h4 className="subtitle is-4">clet.jose@gmail.com</h4>
 
 								<div >
-								  <a href="https://www.facebook.com/" target="_blank">
+								  {/* <a href="https://www.facebook.com/" target="_blank">
 								  	<img className="" src="/assets/facebook.png" style={{ width: '64px'}}/>
-								  </a>
+								  </a> */}
 								  &nbsp;
 								  &nbsp;
 								  &nbsp;
