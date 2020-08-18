@@ -15,16 +15,17 @@ const About = ()=>{
     "html",
     "css",
     "php",
-    "npm",
 
+    "npm",
+    "webpack",
     "nodejs",
     "bootstrap",
-    "git",
-    "linux",
 
+    "git",
     "laravel",
     "mysql",
-    "mongodb",
+    "linux",
+    // "mongodb",
     // "express",
     // "jquery",
   ];
