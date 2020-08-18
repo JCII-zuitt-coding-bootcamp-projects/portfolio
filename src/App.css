@@ -78,3 +78,7 @@ div.skill-icons svg:hover{
 .navbar-item a{
   color: #f5f5f5;
 }
+
+.lang_tools{
+  max-width: 60px;
+}
