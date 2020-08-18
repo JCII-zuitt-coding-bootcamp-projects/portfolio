@@ -1,10 +1,44 @@
-import React from 'react'
+import React , { useEffect, useState } from 'react'
+
+import ClipboardJS from 'clipboard'
 
 /*Bulma components*/
 import { Hero , Container , Heading , Columns } from 'react-bulma-components';
 
 
 const Contact = ()=>{
+
+	const [numberIsCopied, updateNumberIsCopied] = useState(false);
+	const [emailIsCopied, updateemailIsCopied] = useState(false);
+
+
+	
+	useEffect(() => {
+		//initialize clipboard for copy pasting
+		new ClipboardJS(".clipboard-btn");
+	}, [])
+
+
+	const copyNumberHandler = () =>{
+		clipboardSwitchIcon(updateNumberIsCopied);
+	}
+
+	const copyEmailHandler = () =>{
+		clipboardSwitchIcon(updateemailIsCopied);
+	}
+
+
+	function clipboardSwitchIcon(stateUpdater, seconds = 2){
+		// update states
+		stateUpdater(true);
+
+		//return the copy icon after setTimeout
+		setTimeout(() => {
+			stateUpdater(false); // return the copy icon
+		}, seconds * 1000);
+	}
+
+
 
 	return (
 
@@ -30,12 +64,26 @@ const Contact = ()=>{
 								<figure className="image is-64x64 is-centered">
 								  <img className="lang_tools-sm" src="/assets/phone.png" alt="phone" />
 								</figure>
-								<h4 className="subtitle is-4">09155201879</h4>
+								<h4 className="subtitle is-4">
+									09155201879
+									{
+										!numberIsCopied ? <span data-clipboard-text="09155201879" className="clipboard-btn" onClick={ copyNumberHandler } title="Copy to clipboard">
+									  📋
+								  	</span> : <span>✔️</span>
+									}
+								</h4>
 
 								<figure className="image is-64x64 is-centered">
 								  <img className="lang_tools-sm" src="/assets/email.png" alt="email" />
 								</figure>
-								<h4 className="subtitle is-4">clet.jose@gmail.com</h4>
+								<h4 className="subtitle is-4">
+									clet.jose@gmail.com
+									{
+										!emailIsCopied ? <span data-clipboard-text="clet.jose@gmail.com" className="clipboard-btn" onClick={ copyEmailHandler } title="Copy to clipboard">
+									  📋
+								  	</span> : <span>✔️</span>
+									}
+								</h4>
 
 								<div >
 								
