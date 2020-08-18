@@ -49,7 +49,7 @@ const About = ()=>{
 		    <Container className=" animated fadeInDown">
 		    	<Columns>
 		    		<Columns.Column className="">
-					    <Heading className="has-text-centered">
+					    <Heading className="has-text-centered" subtitle={true} size='3'>
 					        Web Developer Portfolio 
 					    	{ /*<i class="material-icons">business_center</i>*/ }
 					    </Heading>
@@ -75,7 +75,7 @@ const About = ()=>{
 				    </Columns.Column>
 
 				    <Columns.Column>
-				        <Heading className="has-text-centered">
+				        <Heading className="has-text-centered" subtitle={true} size='3'>
 					        Languages and Tools
 					    </Heading>
 

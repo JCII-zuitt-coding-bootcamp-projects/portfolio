@@ -54,14 +54,18 @@ div .skill-icons:hover {
 
 }
 
-div.skill-icons svg{
+div.skill-icons svg ,
+.lang_tools-sm,
+.lang_tools{
 	width: 4rem;
 	margin: auto 1rem;
 	transition: transform 0.8s;
   	transform-style: preserve-3d;
 }
 
-div.skill-icons svg:hover{
+div.skill-icons svg:hover,
+.lang_tools-sm:hover,
+.lang_tools:hover{
 	animation-fill-mode: none !important;
 	transition: transform 0.8s !important;
   	transform-style: preserve-3d !important;
@@ -81,4 +85,8 @@ div.skill-icons svg:hover{
 
 .lang_tools{
   max-width: 60px;
+}
+
+.lang_tools-sm{
+  max-width: 45px;
 }
