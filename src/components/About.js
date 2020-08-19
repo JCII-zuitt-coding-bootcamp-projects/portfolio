@@ -61,7 +61,7 @@ const About = ()=>{
 					         <br/>
 					         <p>
 					         I'm a fast learner and can easily adapt to changes when it comes to the latest web technologies. I have learned  a lot of web technologies and best practices that you can take advantage of.
-					         I took <a href="https://zuitt.co/" className="has-text-info" target="_blank">Zuitt Coding Bootcamp</a> course to learn the latest web technologies. I finished their 3 months intensive training course and because of hard work and persistence, I got the 2nd top Performer Achievement Award.
+					         I took <a href="https://zuitt.co/" className="has-text-info" target="_blank" without rel="noopener noreferrer">Zuitt Coding Bootcamp</a> course to learn the latest web technologies. I finished their 3 months intensive training course and because of hard work and persistence, I got the <a href="https://blog.zuitt.co/wyd-why-we-do-what-we-do-batch-47-day-class/" className="has-text-info" target="_blank" without rel="noopener noreferrer">2nd top Performer Achievement Award</a>.
 					         </p>
 
 					         <br/>
