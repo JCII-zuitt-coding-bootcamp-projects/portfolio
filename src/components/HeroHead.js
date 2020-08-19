@@ -45,6 +45,12 @@ const HeroHead = (props)=>{
                   &nbsp;&nbsp;Projects
               </NavLink>
 
+              <NavLink to="/play" activeClassName="is-active" className="navbar-item" onClick={() =>  setMenuShown(!menuShown) }>
+                  <i className="material-icons">videogame_asset</i>
+                  &nbsp;&nbsp;Play
+              </NavLink>
+
+
               <NavLink to="/contact" activeClassName="is-active" className="navbar-item" onClick={() =>  setMenuShown(!menuShown) }>
                   <i className="material-icons">message</i>
                   &nbsp;&nbsp;Contact

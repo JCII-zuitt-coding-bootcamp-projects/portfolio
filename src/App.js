@@ -35,7 +35,7 @@ function App() {
         <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
 
-        <Route path="/showcase" component={MatchingGame} />
+        <Route path="/play" component={MatchingGame} />
 
         {/* <Redirect from="/all-courses" to="/courses" /> */}
         {/* fallback */}

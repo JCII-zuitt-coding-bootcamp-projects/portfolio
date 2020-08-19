@@ -4,9 +4,42 @@ import "./MatchingGame.css";
 /*Bulma components*/
 import { Hero , Columns ,Container , Image} from 'react-bulma-components';
 
+import { Howl, Howler } from "howler";
+
 const MatchingGame = ()=>{
 
 	const gameHolder = useRef(null)
+	
+	const cardClickSound =  new Howl({
+		src: ["/assets/sfx/boink.mp3"],
+	})
+
+	const correctMatchSound = new Howl({
+		src: ["/assets/sfx/correct_match.mp3"],
+	});
+
+	const wrongMatchSound = new Howl({
+		src: ["/assets/sfx/card_sound.mp3"],
+	});
+
+	const newLevelSound = new Howl({
+		src: ["/assets/sfx/new_level.mp3"],
+	});
+
+	const gameAmbiance = new Howl({
+		src: [
+		"/assets/sfx/spongebob_ambiance_2.mp3",
+		// "/assets/sfx/spongebob_ambiance_1.mp3",
+		],
+		volume: 0.2,
+		// autoplay: true,
+		loop: true,
+	});
+
+
+
+
+
 
 	// original characters
 	const original = [1,2,3,4,5,6,7,8,9,10]; 
@@ -41,9 +74,24 @@ const MatchingGame = ()=>{
 	//Characters in play
 	const [characters , setCharacters ] = useState( getDoubledCharacters(level) )
 	
+  	// //componentDidMount
+  	// useEffect(() => {
+		
+	
+	// }, [])
 
+	useEffect(() => {
+		gameAmbiance.stop();
+		gameAmbiance.play();
 
-	//componentDidMount & componentDidUpdate
+		return () => {
+			// stop sounds when going to other component
+			gameAmbiance.stop();
+			// console.log("will unmount");
+		};
+		
+	}, [])
+
 	useEffect(() => {
 		// console.log("new Updated")
 		// if(charsInPlay == 1)
@@ -92,7 +140,8 @@ const MatchingGame = ()=>{
 
         // compare the two selected
         // alert(selected_index);
-        // console.log(selected);
+		// console.log(selected);
+		
         if (characters[selected[0]] === characters[selected[1]]) {
         //   console.log("Matched!");
 
@@ -105,23 +154,32 @@ const MatchingGame = ()=>{
             newChars[selected[1]] = 0; // 0 means removed na
 
             return [...newChars];
-          });
+		  });
+
+		  setSelected([]);
+		  correctMatchSound.play();
+
         } else {
-        //   console.log("NOT the same characters!");
+			//   console.log("NOT the same characters!");
+
+			// reset flag
+			// selected = [];
+			// delay 2 seconds before hiding again...
+			setTimeout(() => {
+				setSelected([]);
+				wrongMatchSound.play();
+			}, 1000);
+			
         }
 
-        // reset flag
-        // selected = [];
-        // delay 2 seconds before hiding again...
-        setTimeout(() => {
-          setSelected([]);
-        }, 1000);
+        
       }
     }, [selected]);
 
 
 
 	function gameHolderReEnter(){
+		newLevelSound.play();
 		let prevClasses = gameHolder.current.className;
 		
 		const exitClass = exitsClass[Math.floor(Math.random() * exitsClass.length)];
@@ -192,6 +250,7 @@ const MatchingGame = ()=>{
 				prevState.push(index);
 				return [...prevState];
 			});
+			cardClickSound.play();
 
 		}else if(selected.length === 1){
 
@@ -206,6 +265,7 @@ const MatchingGame = ()=>{
         		prevState.push(index);
 				return [...prevState];
 			});
+			cardClickSound.play();
 
 		}
 	}
