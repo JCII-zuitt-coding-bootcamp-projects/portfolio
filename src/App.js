@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 /*Bulma css*/
 import 'react-bulma-components/dist/react-bulma-components.min.css';
@@ -17,7 +17,8 @@ import HeroHead from './components/HeroHead'
 // import Landing from './components/Landing'
 import About from './components/About'
 import Projects from './components/Projects'
-import Contact from './components/Contact'
+import Contact from "./components/Contact";
+import Certificates from "./components/Certificates";
 import MatchingGame from './components/games/MatchingGame'
 
 import { Route , Switch, Redirect } from "react-router-dom";
@@ -36,6 +37,7 @@ function App() {
         <Route path="/contact" component={Contact} />
 
         <Route path="/play" component={MatchingGame} />
+        <Route path="/certificates" component={Certificates} />
 
         {/* <Redirect from="/all-courses" to="/courses" /> */}
         {/* fallback */}

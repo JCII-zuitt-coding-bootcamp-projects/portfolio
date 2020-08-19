@@ -54,6 +54,13 @@ const Contact = ()=>{
 					        Contact Information
 					    </Heading>
 						<div className="box skill-icons has-text-centered" >
+
+							<figure class="image is-fullwidth">
+								<img src="/images/workspace.jfif" alt="Workspace" className="workspace" />
+							</figure>
+							
+							<br/>
+
 							<center>
 
 								<figure className="image is-64x64 is-centered">

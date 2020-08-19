@@ -90,3 +90,24 @@ div.skill-icons svg:hover,
 .lang_tools-sm{
   max-width: 45px;
 }
+
+
+.workspace{
+  opacity : 0.5;
+}
+
+.workspace:hover{
+  opacity : 0.8;
+}
+
+.certificate{
+  filter: brightness(110%);
+}
+
+.certificate:hover{
+  filter: brightness(130%);
+}
+
+.zoom_certificate{
+  filter: brightness(150%);
+}
