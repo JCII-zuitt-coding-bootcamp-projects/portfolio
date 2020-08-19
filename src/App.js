@@ -18,7 +18,7 @@ import HeroHead from './components/HeroHead'
 import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
-// import Showcase from './components/Showcase'
+import MatchingGame from './components/games/MatchingGame'
 
 import { Route , Switch, Redirect } from "react-router-dom";
 
@@ -34,6 +34,9 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
+
+        <Route path="/showcase" component={MatchingGame} />
+
         {/* <Redirect from="/all-courses" to="/courses" /> */}
         {/* fallback */}
         <Route component={About} />

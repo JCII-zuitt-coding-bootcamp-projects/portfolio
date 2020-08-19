@@ -1,0 +1,6 @@
+.spongebob-char{
+    cursor: grab;
+    height : 4.5rem;
+    user-drag: none; 
+    user-select: none;
+}
