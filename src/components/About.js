@@ -54,7 +54,7 @@ const About = ()=>{
 					    	{ /*<i class="material-icons">business_center</i>*/ }
 					    </Heading>
 					    <Heading subtitle  className="animated fadeIn has-text-justified" style={{ marginTop : '3rem'}}>
-					         Hi! I'm Jose Clet II,
+					         Hi! I'm Jose Clet II 👋,
 					         <br/>
 					         And I'm a full stack web developer.
 					         <br />
@@ -67,6 +67,7 @@ const About = ()=>{
 					         <br/>
 					         <p>
 					         Feel free to browse my portfolio to know more about my projects and skills.
+							 You may try the casual mini-game I developed for you. 😁
 					         </p>
 					         <br />
 					         Have a nice day! 
