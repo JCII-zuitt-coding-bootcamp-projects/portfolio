@@ -65,7 +65,7 @@ const Capstone3 = (props)=>{
 			   				<ol className="has-text-justified" style={{ margin: '0 1rem'}}>
 
 				   				<li>
-				   					Go to the <a href="https://eyesecure.herokuapp.com/login" target="_blank">Login</a> Page and use the credentials below:
+				   					Go to the <a href="https://eyesecure.netlify.app/login" target="_blank">Login</a> Page and use the credentials below:
 				   					<br/>
 				   					<strong className="has-text-grey">Username:</strong> &nbsp;<i>admin1</i>
 				   					<br/>
@@ -151,7 +151,7 @@ const Capstone3 = (props)=>{
 				   				</li>
 
 				   				<li>
-				   					The App is hosted on <a href="https://www.netlify.com/" target="_blank">netlify</a> for the frontend while the backend on <a href="https://www.heroku.com/" target="_blank">Heroku</a>
+				   					The App is hosted on <a href="https://www.netlify.com/" target="_blank">netlify</a> for the frontend while the backend on <a href="https://www.heroku.com/" target="_blank">Heroku</a>.
 				   					If the website did not load properly or show some error, try to reload the website many times.
 				   					Because of these, the system may load slower for rendering and fetching of necessary data.
 				   				</li>
