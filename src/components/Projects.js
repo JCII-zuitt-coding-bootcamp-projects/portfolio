@@ -44,6 +44,22 @@ const Projects = ()=>{
                   📃 Visit cleverform documentation
                 </h5>
               </a>
+
+              <h6 class="title is-6 has-text-centered">
+                <a href="https://github.com/cleverform-js/cleverform" target="_blank" className="has-text-white animated delay-1s bounceIn">
+                    
+                  <img
+                    className="small_icon"
+                    src="/images/tools/github.svg"
+                    alt="Github repo"
+                    title="Visit project repository"
+                  />
+                  Go to repository
+                  
+                </a>
+              </h6>
+
+
               <br />
               <center>
                 {

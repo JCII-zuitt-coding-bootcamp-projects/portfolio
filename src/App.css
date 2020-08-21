@@ -83,6 +83,14 @@ div.skill-icons svg:hover,
   color: #f5f5f5;
 }
 
+
+.small_icon{
+  max-width: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: -8px;
+}
+
 .lang_tools{
   max-width: 60px;
 }

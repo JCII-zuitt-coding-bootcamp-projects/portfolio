@@ -31,6 +31,18 @@ const Capstone1 = (props)=>{
 			   			</a>
 			   		</h5>
 
+					<h6 class="title is-6 has-text-centered">
+						<a href="https://github.com/JCII-zuitt-coding-bootcamp-projects/Capstone-1" target="_blank">
+			   				Go to repository
+							<img
+								className="small_icon"
+								src="/images/tools/github.svg"
+								alt="Github repo"
+								title="Visit project repository"
+							/>
+			   			</a>
+			   		</h6>
+
 			   		<br/>
 
 			   		<h6 className="title is-6 has-text-grey">

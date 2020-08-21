@@ -31,9 +31,33 @@ const Capstone3 = (props)=>{
 			   				Go to EyeSecure <i class="material-icons">insert_link</i>
 			   			</a>
 			   		</h5>
-			   			<center>
-			   			<label className="has-text-centered has-text-success ">(Instructions how to use below)</label>
-			   			</center>
+					   
+
+					<h6 class="title is-6 has-text-centered">
+						<a href="https://github.com/JCII-zuitt-coding-bootcamp-projects/Capstone-3-client" target="_blank">
+			   				Go to client/frontend repository
+							<img
+								className="small_icon"
+								src="/images/tools/github.svg"
+								alt="Github repo"
+								title="Visit project repository"
+							/>
+			   			</a>
+						<br/><br/>
+						<a href="https://github.com/JCII-zuitt-coding-bootcamp-projects/Capstone-3-server" target="_blank">
+			   				Go to server repository
+							<img
+								className="small_icon"
+								src="/images/tools/github.svg"
+								alt="Github repo"
+								title="Visit project repository"
+							/>
+			   			</a>
+			   		</h6>
+					
+					<center>
+					<label className="has-text-centered has-text-success ">(Instructions how to use below)</label>
+					</center>
 
 			   		<br/>
 
