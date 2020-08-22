@@ -92,7 +92,7 @@ const MatchingGame = ()=>{
 		// 	(new Image()).src = `/assets/sb-characters/${image}.jpg`;
 		// })
 
-		setTimeout(() => {
+		const welcomeTimer = setTimeout(() => {
 
 			wrongMatchSound.play();
 
@@ -102,10 +102,10 @@ const MatchingGame = ()=>{
 				return `<img 
 					src='/assets/sb-characters/${img}.jpg' 
 					alt='img'   
-					class=" spongebob-char"
+					class=" spongebob-char-sm"
 				/>`;
 				//animated pulse infinite
-			}).join();
+			}).join('');
 
 			
 			Swal.fire({
@@ -133,6 +133,9 @@ const MatchingGame = ()=>{
 		}, 800);
 	
 		return () => {
+
+			// remove the welcomeTimer automatically when user goes to other url..
+			clearTimeout(welcomeTimer);
 			// stop sounds when going to other component // componentDidUnmount
 			gameAmbiance.stop();
 			// console.log("will unmount");

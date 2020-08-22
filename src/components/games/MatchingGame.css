@@ -4,3 +4,11 @@
     user-drag: none; 
     user-select: none;
 }
+
+
+.spongebob-char-sm{
+    cursor: grab;
+    height : 2.5rem;
+    user-drag: none; 
+    user-select: none;
+}
