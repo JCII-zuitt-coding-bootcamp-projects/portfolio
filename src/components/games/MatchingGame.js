@@ -1,5 +1,5 @@
 import React, {useState , useEffect ,useRef} from 'react'
-
+import Swal from "sweetalert2";
 import "./MatchingGame.css";
 /*Bulma components*/
 import { Hero , Columns ,Container , Image} from 'react-bulma-components';
@@ -80,12 +80,60 @@ const MatchingGame = ()=>{
 	
 	// }, [])
 
+	// component Did mount
 	useEffect(() => {
+		
 		gameAmbiance.stop();
 		gameAmbiance.play();
 
+		//preload character images to avoid requesting images while playing
+		// original.forEach((image) => {
+		// 	console.warn("loaded : ", image);
+		// 	(new Image()).src = `/assets/sb-characters/${image}.jpg`;
+		// })
+
+		setTimeout(() => {
+
+			wrongMatchSound.play();
+
+
+
+			const charactersInImg = original.map(img => {
+				return `<img 
+					src='/assets/sb-characters/${img}.jpg' 
+					alt='img'   
+					class=" spongebob-char"
+				/>`;
+				//animated pulse infinite
+			}).join();
+
+			
+			Swal.fire({
+				// icon: 'error',
+				html: `
+				${charactersInImg}
+				<br/>
+				<img 
+					src='/assets/spongebob.png' 
+					alt='img'   
+					class="animated pulse infinite" 
+					style='height:200px;'
+				/>
+				<br/>
+				<h3 class="has-text-warning subtitle is-4 ">SpongeBob Matching Game</h3>
+				<p>Match characters to eliminate.</p>
+				`,
+				confirmButtonText : "Play now",
+				// footer: '<a href>Why do I have this issue?</a>'
+
+				onClose: () => {
+					correctMatchSound.play()
+				}
+			})
+		}, 800);
+	
 		return () => {
-			// stop sounds when going to other component
+			// stop sounds when going to other component // componentDidUnmount
 			gameAmbiance.stop();
 			// console.log("will unmount");
 		};
@@ -180,6 +228,15 @@ const MatchingGame = ()=>{
 
 	function gameHolderReEnter(){
 		newLevelSound.play();
+		
+		Swal.fire({
+			position: "top-end",
+			icon: "success",
+			title: `Done level ${level}`,
+			showConfirmButton: false,
+			timer: 1500,
+		});
+	
 		let prevClasses = gameHolder.current.className;
 		
 		const exitClass = exitsClass[Math.floor(Math.random() * exitsClass.length)];
@@ -313,7 +370,7 @@ const MatchingGame = ()=>{
 						   			</Columns.Column>
 		   						);
 		   					}else{
-		   						//if 0 the value... 0 means natangal na...
+		   						//if 0 the value... 0 means removed na...
 		   						return (
 		   							<Columns.Column size={3} key={index}>
 		   								<div style={{ height : '60px'}}>
